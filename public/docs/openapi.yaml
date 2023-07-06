@@ -1,0 +1,909 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/register:
+    post:
+      summary: ''
+      operationId: postApiRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: 'Must be at least 4 characters.'
+                  example: zmippnjuvkumgasffpxiwzgkusgaxkjhipzhqkxjdojwsccdivaygvdmpvlfbolpslijdlehwddmzihsdqerjzr
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: rosemarie.wyman@example.net
+                password:
+                  type: string
+                  description: 'Must be at least 8 characters.'
+                  example: M/hq_hT20Y<~
+              required:
+                - name
+                - email
+                - password
+      security: []
+  /api/login:
+    post:
+      summary: ''
+      operationId: postApiLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: sarina.deckow@example.net
+                password:
+                  type: string
+                  description: ''
+                  example: 'oJC^42fG-o?5~'
+              required:
+                - email
+                - password
+      security: []
+  /api/logout:
+    post:
+      summary: ''
+      operationId: postApiLogout
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/fetchAll:
+    get:
+      summary: ''
+      operationId: getApiFetchAll
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  meta:
+                    success: true
+                    message: 'Movie List'
+                  body:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        user_id: 2
+                        title: 'this is title update double'
+                        summary: 'this is summary'
+                        image: default.jpg
+                        url: 'http://kris.biz/corporis-accusamus-saepe-aut-ea'
+                        genres: 'this is genres'
+                        author: 'this is author'
+                        tags: 'this is tags'
+                        imdb_rating: 3.5
+                        pdf: test
+                        created_at: '2023-07-06T16:42:42.000000Z'
+                        updated_at: '2023-07-06T16:43:21.000000Z'
+                        user:
+                          id: 2
+                          name: 'Prof. Myra Vandervort MD'
+                          email: concepcion.mohr@example.org
+                          email_verified_at: '2023-07-06T16:42:41.000000Z'
+                          created_at: '2023-07-06T16:42:41.000000Z'
+                          updated_at: '2023-07-06T16:42:41.000000Z'
+                        comments: []
+                      -
+                        id: 2
+                        user_id: 2
+                        title: 'Est consequuntur omnis alias voluptas nam sit.'
+                        summary: 'Unde corrupti doloremque deserunt sed eos blanditiis officia error. Dolor sit totam blanditiis corporis doloremque quam. Sit dolore incidunt delectus sunt nobis. Minus reprehenderit laboriosam dolorum consequuntur.'
+                        image: default.jpg
+                        url: 'https://purdy.info/aperiam-quia-qui-beatae-consectetur.html'
+                        genres: 'Katrine Shields'
+                        author: 'Mustafa Walker'
+                        tags: 'est facere inventore'
+                        imdb_rating: 5.89
+                        pdf: 'http://wilkinson.com//dummy.pdf'
+                        created_at: '2023-07-06T16:42:42.000000Z'
+                        updated_at: '2023-07-06T16:42:42.000000Z'
+                        user:
+                          id: 2
+                          name: 'Prof. Myra Vandervort MD'
+                          email: concepcion.mohr@example.org
+                          email_verified_at: '2023-07-06T16:42:41.000000Z'
+                          created_at: '2023-07-06T16:42:41.000000Z'
+                          updated_at: '2023-07-06T16:42:41.000000Z'
+                        comments:
+                          -
+                            id: 3
+                            comment: 'Quia voluptatem ut eligendi nihil libero et. Sit ipsam sunt ipsa voluptatum corporis. Officiis id eos necessitatibus. Deserunt ipsum ducimus non quod.'
+                            user_id: 6
+                            movie_id: 2
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                          -
+                            id: 6
+                            comment: 'Repellat pariatur consequatur iste totam est porro provident tempora. Laudantium vero voluptatem saepe nemo et expedita itaque veritatis. A quisquam distinctio maiores aut accusantium dolores porro dolorem. Aut iste fuga id ab aperiam.'
+                            user_id: 6
+                            movie_id: 2
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                          -
+                            id: 7
+                            comment: 'Minima error eveniet enim cumque hic. Est est sapiente ullam facere tempore vitae.'
+                            user_id: 2
+                            movie_id: 2
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                      -
+                        id: 3
+                        user_id: 3
+                        title: 'Libero sapiente repellendus excepturi aliquam sapiente et animi.'
+                        summary: 'Eius nihil autem consequuntur quibusdam hic. Facere qui voluptatem similique dolorem rerum molestias quod. Nam voluptatem rerum inventore vero. Quo veritatis cupiditate commodi architecto voluptate nam.'
+                        image: default.jpg
+                        url: 'http://www.orn.info/distinctio-ut-commodi-quibusdam-ullam-voluptas-fuga'
+                        genres: 'Prof. Gerardo Rath DDS'
+                        author: 'Milo Davis'
+                        tags: 'veritatis sed officia'
+                        imdb_rating: 6.67
+                        pdf: 'http://www.mosciski.com//dummy.pdf'
+                        created_at: '2023-07-06T16:42:42.000000Z'
+                        updated_at: '2023-07-06T16:42:42.000000Z'
+                        user:
+                          id: 3
+                          name: 'Dr. Bo Tremblay'
+                          email: jacobs.jeffery@example.net
+                          email_verified_at: '2023-07-06T16:42:41.000000Z'
+                          created_at: '2023-07-06T16:42:41.000000Z'
+                          updated_at: '2023-07-06T16:42:41.000000Z'
+                        comments:
+                          -
+                            id: 10
+                            comment: 'In quasi accusamus in dignissimos cum. Necessitatibus vel tempore totam minima ipsum voluptatem aliquam. Occaecati mollitia magnam accusantium. Unde minima voluptates commodi voluptatem consectetur nihil eaque.'
+                            user_id: 1
+                            movie_id: 3
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                      -
+                        id: 4
+                        user_id: 7
+                        title: 'Aut sit perferendis in iusto id ullam.'
+                        summary: 'Ex odio nostrum veritatis impedit rerum ea. Esse quis similique unde aperiam ut natus. Sit quia qui laboriosam at. Voluptatem commodi mollitia perspiciatis et porro et.'
+                        image: default.jpg
+                        url: 'http://hegmann.biz/nihil-architecto-et-et'
+                        genres: 'Rhoda Rath'
+                        author: 'Francesca Brakus'
+                        tags: 'quis quia aut'
+                        imdb_rating: 7.29
+                        pdf: 'http://www.jakubowski.info//dummy.pdf'
+                        created_at: '2023-07-06T16:42:42.000000Z'
+                        updated_at: '2023-07-06T16:42:42.000000Z'
+                        user:
+                          id: 7
+                          name: 'Mrs. Madie Doyle'
+                          email: ida.roberts@example.net
+                          email_verified_at: '2023-07-06T16:42:41.000000Z'
+                          created_at: '2023-07-06T16:42:41.000000Z'
+                          updated_at: '2023-07-06T16:42:41.000000Z'
+                        comments:
+                          -
+                            id: 2
+                            comment: 'Nisi pariatur reprehenderit voluptas eum consequatur est sed. Omnis ratione molestiae corrupti nihil voluptate quasi est magni. Adipisci quia itaque eos consequatur. Perspiciatis ipsa in est delectus ratione at.'
+                            user_id: 2
+                            movie_id: 4
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                      -
+                        id: 5
+                        user_id: 10
+                        title: 'Et officiis accusantium a consequatur ipsum.'
+                        summary: 'Accusamus voluptas eos velit eligendi est fuga. Labore repellendus amet omnis incidunt impedit quod minima. Alias sit iure aut ut rerum.'
+                        image: default.jpg
+                        url: 'http://www.bailey.biz/repellendus-odit-pariatur-veritatis-qui-et'
+                        genres: 'Lonzo Robel'
+                        author: 'Maida Towne'
+                        tags: 'nesciunt suscipit esse'
+                        imdb_rating: 4.04
+                        pdf: 'http://torphy.com/aliquam-error-sunt-et-atque-adipisci-reiciendis-doloribus.html/dummy.pdf'
+                        created_at: '2023-07-06T16:42:42.000000Z'
+                        updated_at: '2023-07-06T16:42:42.000000Z'
+                        user:
+                          id: 10
+                          name: Admin
+                          email: admin@gmail.com
+                          email_verified_at: null
+                          created_at: null
+                          updated_at: null
+                        comments: []
+                      -
+                        id: 6
+                        user_id: 2
+                        title: 'Nostrum quis odit dolorem ipsum qui debitis vel dicta.'
+                        summary: 'Harum quibusdam quis blanditiis consequatur magnam mollitia temporibus. Magnam molestias fuga odit iure recusandae consectetur perspiciatis. Non facilis perferendis ut esse eos qui itaque. Et perspiciatis et voluptas laborum fugit.'
+                        image: default.jpg
+                        url: 'http://www.carter.com/'
+                        genres: 'Angelita West I'
+                        author: 'Robyn Bode'
+                        tags: 'explicabo sit ut'
+                        imdb_rating: 6.84
+                        pdf: 'http://rohan.com//dummy.pdf'
+                        created_at: '2023-07-06T16:42:42.000000Z'
+                        updated_at: '2023-07-06T16:42:42.000000Z'
+                        user:
+                          id: 2
+                          name: 'Prof. Myra Vandervort MD'
+                          email: concepcion.mohr@example.org
+                          email_verified_at: '2023-07-06T16:42:41.000000Z'
+                          created_at: '2023-07-06T16:42:41.000000Z'
+                          updated_at: '2023-07-06T16:42:41.000000Z'
+                        comments: []
+                      -
+                        id: 7
+                        user_id: 8
+                        title: 'Rerum omnis consequatur non explicabo laudantium dolorem quia.'
+                        summary: 'Tempore beatae est quis. Quam et quidem autem. Alias et ut consequatur magnam inventore molestiae doloremque vel. Tenetur aut animi culpa reprehenderit quis voluptatem eos.'
+                        image: default.jpg
+                        url: 'https://www.hoppe.biz/quo-eveniet-labore-quisquam'
+                        genres: 'Crystal Prosacco'
+                        author: 'Janae Hammes PhD'
+                        tags: 'rerum error natus'
+                        imdb_rating: 7.31
+                        pdf: 'http://price.com//dummy.pdf'
+                        created_at: '2023-07-06T16:42:42.000000Z'
+                        updated_at: '2023-07-06T16:42:42.000000Z'
+                        user:
+                          id: 8
+                          name: 'Devante Kulas'
+                          email: filiberto04@example.net
+                          email_verified_at: '2023-07-06T16:42:41.000000Z'
+                          created_at: '2023-07-06T16:42:41.000000Z'
+                          updated_at: '2023-07-06T16:42:41.000000Z'
+                        comments:
+                          -
+                            id: 1
+                            comment: 'Iure pariatur voluptatem nostrum qui quidem quo consequatur dicta. Aut numquam explicabo ex et. Corporis ab laborum quidem labore eveniet et harum. Ratione necessitatibus omnis aut assumenda dolor architecto eveniet iste.'
+                            user_id: 9
+                            movie_id: 7
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                    first_page_url: 'http://localhost/api/fetchAll?page=1'
+                    from: 1
+                    last_page: 3
+                    last_page_url: 'http://localhost/api/fetchAll?page=3'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://localhost/api/fetchAll?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: 'http://localhost/api/fetchAll?page=2'
+                        label: '2'
+                        active: false
+                      -
+                        url: 'http://localhost/api/fetchAll?page=3'
+                        label: '3'
+                        active: false
+                      -
+                        url: 'http://localhost/api/fetchAll?page=2'
+                        label: 'Next &raquo;'
+                        active: false
+                    next_page_url: 'http://localhost/api/fetchAll?page=2'
+                    path: 'http://localhost/api/fetchAll'
+                    per_page: 7
+                    prev_page_url: null
+                    to: 7
+                    total: 15
+                properties:
+                  meta:
+                    type: object
+                    properties:
+                      success:
+                        type: boolean
+                        example: true
+                      message:
+                        type: string
+                        example: 'Movie List'
+                  body:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            user_id: 2
+                            title: 'this is title update double'
+                            summary: 'this is summary'
+                            image: default.jpg
+                            url: 'http://kris.biz/corporis-accusamus-saepe-aut-ea'
+                            genres: 'this is genres'
+                            author: 'this is author'
+                            tags: 'this is tags'
+                            imdb_rating: 3.5
+                            pdf: test
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:43:21.000000Z'
+                            user:
+                              id: 2
+                              name: 'Prof. Myra Vandervort MD'
+                              email: concepcion.mohr@example.org
+                              email_verified_at: '2023-07-06T16:42:41.000000Z'
+                              created_at: '2023-07-06T16:42:41.000000Z'
+                              updated_at: '2023-07-06T16:42:41.000000Z'
+                            comments: []
+                          -
+                            id: 2
+                            user_id: 2
+                            title: 'Est consequuntur omnis alias voluptas nam sit.'
+                            summary: 'Unde corrupti doloremque deserunt sed eos blanditiis officia error. Dolor sit totam blanditiis corporis doloremque quam. Sit dolore incidunt delectus sunt nobis. Minus reprehenderit laboriosam dolorum consequuntur.'
+                            image: default.jpg
+                            url: 'https://purdy.info/aperiam-quia-qui-beatae-consectetur.html'
+                            genres: 'Katrine Shields'
+                            author: 'Mustafa Walker'
+                            tags: 'est facere inventore'
+                            imdb_rating: 5.89
+                            pdf: 'http://wilkinson.com//dummy.pdf'
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                            user:
+                              id: 2
+                              name: 'Prof. Myra Vandervort MD'
+                              email: concepcion.mohr@example.org
+                              email_verified_at: '2023-07-06T16:42:41.000000Z'
+                              created_at: '2023-07-06T16:42:41.000000Z'
+                              updated_at: '2023-07-06T16:42:41.000000Z'
+                            comments:
+                              -
+                                id: 3
+                                comment: 'Quia voluptatem ut eligendi nihil libero et. Sit ipsam sunt ipsa voluptatum corporis. Officiis id eos necessitatibus. Deserunt ipsum ducimus non quod.'
+                                user_id: 6
+                                movie_id: 2
+                                created_at: '2023-07-06T16:42:42.000000Z'
+                                updated_at: '2023-07-06T16:42:42.000000Z'
+                              -
+                                id: 6
+                                comment: 'Repellat pariatur consequatur iste totam est porro provident tempora. Laudantium vero voluptatem saepe nemo et expedita itaque veritatis. A quisquam distinctio maiores aut accusantium dolores porro dolorem. Aut iste fuga id ab aperiam.'
+                                user_id: 6
+                                movie_id: 2
+                                created_at: '2023-07-06T16:42:42.000000Z'
+                                updated_at: '2023-07-06T16:42:42.000000Z'
+                              -
+                                id: 7
+                                comment: 'Minima error eveniet enim cumque hic. Est est sapiente ullam facere tempore vitae.'
+                                user_id: 2
+                                movie_id: 2
+                                created_at: '2023-07-06T16:42:42.000000Z'
+                                updated_at: '2023-07-06T16:42:42.000000Z'
+                          -
+                            id: 3
+                            user_id: 3
+                            title: 'Libero sapiente repellendus excepturi aliquam sapiente et animi.'
+                            summary: 'Eius nihil autem consequuntur quibusdam hic. Facere qui voluptatem similique dolorem rerum molestias quod. Nam voluptatem rerum inventore vero. Quo veritatis cupiditate commodi architecto voluptate nam.'
+                            image: default.jpg
+                            url: 'http://www.orn.info/distinctio-ut-commodi-quibusdam-ullam-voluptas-fuga'
+                            genres: 'Prof. Gerardo Rath DDS'
+                            author: 'Milo Davis'
+                            tags: 'veritatis sed officia'
+                            imdb_rating: 6.67
+                            pdf: 'http://www.mosciski.com//dummy.pdf'
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                            user:
+                              id: 3
+                              name: 'Dr. Bo Tremblay'
+                              email: jacobs.jeffery@example.net
+                              email_verified_at: '2023-07-06T16:42:41.000000Z'
+                              created_at: '2023-07-06T16:42:41.000000Z'
+                              updated_at: '2023-07-06T16:42:41.000000Z'
+                            comments:
+                              -
+                                id: 10
+                                comment: 'In quasi accusamus in dignissimos cum. Necessitatibus vel tempore totam minima ipsum voluptatem aliquam. Occaecati mollitia magnam accusantium. Unde minima voluptates commodi voluptatem consectetur nihil eaque.'
+                                user_id: 1
+                                movie_id: 3
+                                created_at: '2023-07-06T16:42:42.000000Z'
+                                updated_at: '2023-07-06T16:42:42.000000Z'
+                          -
+                            id: 4
+                            user_id: 7
+                            title: 'Aut sit perferendis in iusto id ullam.'
+                            summary: 'Ex odio nostrum veritatis impedit rerum ea. Esse quis similique unde aperiam ut natus. Sit quia qui laboriosam at. Voluptatem commodi mollitia perspiciatis et porro et.'
+                            image: default.jpg
+                            url: 'http://hegmann.biz/nihil-architecto-et-et'
+                            genres: 'Rhoda Rath'
+                            author: 'Francesca Brakus'
+                            tags: 'quis quia aut'
+                            imdb_rating: 7.29
+                            pdf: 'http://www.jakubowski.info//dummy.pdf'
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                            user:
+                              id: 7
+                              name: 'Mrs. Madie Doyle'
+                              email: ida.roberts@example.net
+                              email_verified_at: '2023-07-06T16:42:41.000000Z'
+                              created_at: '2023-07-06T16:42:41.000000Z'
+                              updated_at: '2023-07-06T16:42:41.000000Z'
+                            comments:
+                              -
+                                id: 2
+                                comment: 'Nisi pariatur reprehenderit voluptas eum consequatur est sed. Omnis ratione molestiae corrupti nihil voluptate quasi est magni. Adipisci quia itaque eos consequatur. Perspiciatis ipsa in est delectus ratione at.'
+                                user_id: 2
+                                movie_id: 4
+                                created_at: '2023-07-06T16:42:42.000000Z'
+                                updated_at: '2023-07-06T16:42:42.000000Z'
+                          -
+                            id: 5
+                            user_id: 10
+                            title: 'Et officiis accusantium a consequatur ipsum.'
+                            summary: 'Accusamus voluptas eos velit eligendi est fuga. Labore repellendus amet omnis incidunt impedit quod minima. Alias sit iure aut ut rerum.'
+                            image: default.jpg
+                            url: 'http://www.bailey.biz/repellendus-odit-pariatur-veritatis-qui-et'
+                            genres: 'Lonzo Robel'
+                            author: 'Maida Towne'
+                            tags: 'nesciunt suscipit esse'
+                            imdb_rating: 4.04
+                            pdf: 'http://torphy.com/aliquam-error-sunt-et-atque-adipisci-reiciendis-doloribus.html/dummy.pdf'
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                            user:
+                              id: 10
+                              name: Admin
+                              email: admin@gmail.com
+                              email_verified_at: null
+                              created_at: null
+                              updated_at: null
+                            comments: []
+                          -
+                            id: 6
+                            user_id: 2
+                            title: 'Nostrum quis odit dolorem ipsum qui debitis vel dicta.'
+                            summary: 'Harum quibusdam quis blanditiis consequatur magnam mollitia temporibus. Magnam molestias fuga odit iure recusandae consectetur perspiciatis. Non facilis perferendis ut esse eos qui itaque. Et perspiciatis et voluptas laborum fugit.'
+                            image: default.jpg
+                            url: 'http://www.carter.com/'
+                            genres: 'Angelita West I'
+                            author: 'Robyn Bode'
+                            tags: 'explicabo sit ut'
+                            imdb_rating: 6.84
+                            pdf: 'http://rohan.com//dummy.pdf'
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                            user:
+                              id: 2
+                              name: 'Prof. Myra Vandervort MD'
+                              email: concepcion.mohr@example.org
+                              email_verified_at: '2023-07-06T16:42:41.000000Z'
+                              created_at: '2023-07-06T16:42:41.000000Z'
+                              updated_at: '2023-07-06T16:42:41.000000Z'
+                            comments: []
+                          -
+                            id: 7
+                            user_id: 8
+                            title: 'Rerum omnis consequatur non explicabo laudantium dolorem quia.'
+                            summary: 'Tempore beatae est quis. Quam et quidem autem. Alias et ut consequatur magnam inventore molestiae doloremque vel. Tenetur aut animi culpa reprehenderit quis voluptatem eos.'
+                            image: default.jpg
+                            url: 'https://www.hoppe.biz/quo-eveniet-labore-quisquam'
+                            genres: 'Crystal Prosacco'
+                            author: 'Janae Hammes PhD'
+                            tags: 'rerum error natus'
+                            imdb_rating: 7.31
+                            pdf: 'http://price.com//dummy.pdf'
+                            created_at: '2023-07-06T16:42:42.000000Z'
+                            updated_at: '2023-07-06T16:42:42.000000Z'
+                            user:
+                              id: 8
+                              name: 'Devante Kulas'
+                              email: filiberto04@example.net
+                              email_verified_at: '2023-07-06T16:42:41.000000Z'
+                              created_at: '2023-07-06T16:42:41.000000Z'
+                              updated_at: '2023-07-06T16:42:41.000000Z'
+                            comments:
+                              -
+                                id: 1
+                                comment: 'Iure pariatur voluptatem nostrum qui quidem quo consequatur dicta. Aut numquam explicabo ex et. Corporis ab laborum quidem labore eveniet et harum. Ratione necessitatibus omnis aut assumenda dolor architecto eveniet iste.'
+                                user_id: 9
+                                movie_id: 7
+                                created_at: '2023-07-06T16:42:42.000000Z'
+                                updated_at: '2023-07-06T16:42:42.000000Z'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            user_id:
+                              type: integer
+                              example: 2
+                            title:
+                              type: string
+                              example: 'this is title update double'
+                            summary:
+                              type: string
+                              example: 'this is summary'
+                            image:
+                              type: string
+                              example: default.jpg
+                            url:
+                              type: string
+                              example: 'http://kris.biz/corporis-accusamus-saepe-aut-ea'
+                            genres:
+                              type: string
+                              example: 'this is genres'
+                            author:
+                              type: string
+                              example: 'this is author'
+                            tags:
+                              type: string
+                              example: 'this is tags'
+                            imdb_rating:
+                              type: number
+                              example: 3.5
+                            pdf:
+                              type: string
+                              example: test
+                            created_at:
+                              type: string
+                              example: '2023-07-06T16:42:42.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2023-07-06T16:43:21.000000Z'
+                            user:
+                              type: object
+                              properties:
+                                id:
+                                  type: integer
+                                  example: 2
+                                name:
+                                  type: string
+                                  example: 'Prof. Myra Vandervort MD'
+                                email:
+                                  type: string
+                                  example: concepcion.mohr@example.org
+                                email_verified_at:
+                                  type: string
+                                  example: '2023-07-06T16:42:41.000000Z'
+                                created_at:
+                                  type: string
+                                  example: '2023-07-06T16:42:41.000000Z'
+                                updated_at:
+                                  type: string
+                                  example: '2023-07-06T16:42:41.000000Z'
+                            comments:
+                              type: array
+                              example: []
+                      first_page_url:
+                        type: string
+                        example: 'http://localhost/api/fetchAll?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 3
+                      last_page_url:
+                        type: string
+                        example: 'http://localhost/api/fetchAll?page=3'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://localhost/api/fetchAll?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: 'http://localhost/api/fetchAll?page=2'
+                            label: '2'
+                            active: false
+                          -
+                            url: 'http://localhost/api/fetchAll?page=3'
+                            label: '3'
+                            active: false
+                          -
+                            url: 'http://localhost/api/fetchAll?page=2'
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://localhost/api/fetchAll?page=2'
+                      path:
+                        type: string
+                        example: 'http://localhost/api/fetchAll'
+                      per_page:
+                        type: integer
+                        example: 7
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 7
+                      total:
+                        type: integer
+                        example: 15
+      tags:
+        - Endpoints
+      security: []
+  '/api/relatedMovie/{id}':
+    get:
+      summary: ''
+      operationId: getApiRelatedMovieId
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the relatedMovie.'
+        example: itaque
+        required: true
+        schema:
+          type: string
+  /api/movies/create:
+    post:
+      summary: ''
+      operationId: postApiMoviesCreate
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: ''
+                  example: suscipit
+                summary:
+                  type: string
+                  description: ''
+                  example: sit
+                image:
+                  type: string
+                  description: ''
+                  example: assumenda
+                genres:
+                  type: string
+                  description: ''
+                  example: atque
+                author:
+                  type: string
+                  description: ''
+                  example: incidunt
+                tags:
+                  type: string
+                  description: ''
+                  example: nam
+                imdb_rating:
+                  type: string
+                  description: ''
+                  example: quos
+                pdf:
+                  type: string
+                  description: ''
+                  example: et
+              required:
+                - title
+                - summary
+                - image
+                - genres
+                - author
+                - tags
+                - imdb_rating
+                - pdf
+      security: []
+  '/api/movies/details/{id}':
+    get:
+      summary: ''
+      operationId: getApiMoviesDetailsId
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the detail.'
+        example: veritatis
+        required: true
+        schema:
+          type: string
+  '/api/movies/update/{id}':
+    post:
+      summary: ''
+      operationId: postApiMoviesUpdateId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: ''
+                  example: ea
+                summary:
+                  type: string
+                  description: ''
+                  example: molestiae
+                genres:
+                  type: string
+                  description: ''
+                  example: maxime
+                author:
+                  type: string
+                  description: ''
+                  example: dicta
+                tags:
+                  type: string
+                  description: ''
+                  example: quisquam
+                imdb_rating:
+                  type: string
+                  description: ''
+                  example: sint
+                pdf:
+                  type: string
+                  description: ''
+                  example: soluta
+              required:
+                - title
+                - summary
+                - genres
+                - author
+                - tags
+                - imdb_rating
+                - pdf
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the update.'
+        example: excepturi
+        required: true
+        schema:
+          type: string
+  '/api/movies/delete/{id}':
+    delete:
+      summary: ''
+      operationId: deleteApiMoviesDeleteId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the delete.'
+        example: ipsa
+        required: true
+        schema:
+          type: string
+  /api/comments/create:
+    post:
+      summary: ''
+      operationId: postApiCommentsCreate
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                comment:
+                  type: string
+                  description: ''
+                  example: quibusdam
+                movie_id:
+                  type: string
+                  description: ''
+                  example: qui
+              required:
+                - comment
+                - movie_id
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

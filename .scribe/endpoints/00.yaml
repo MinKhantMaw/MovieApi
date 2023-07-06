@@ -1,0 +1,540 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/register
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: 'Must be at least 4 characters.'
+        required: true
+        example: zmippnjuvkumgasffpxiwzgkusgaxkjhipzhqkxjdojwsccdivaygvdmpvlfbolpslijdlehwddmzihsdqerjzr
+        type: string
+        custom: []
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: rosemarie.wyman@example.net
+        type: string
+        custom: []
+      password:
+        name: password
+        description: 'Must be at least 8 characters.'
+        required: true
+        example: M/hq_hT20Y<~
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: zmippnjuvkumgasffpxiwzgkusgaxkjhipzhqkxjdojwsccdivaygvdmpvlfbolpslijdlehwddmzihsdqerjzr
+      email: rosemarie.wyman@example.net
+      password: M/hq_hT20Y<~
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/login
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      email:
+        name: email
+        description: 'Must be a valid email address.'
+        required: true
+        example: sarina.deckow@example.net
+        type: string
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: 'oJC^42fG-o?5~'
+        type: string
+        custom: []
+    cleanBodyParameters:
+      email: sarina.deckow@example.net
+      password: 'oJC^42fG-o?5~'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/logout
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/fetchAll
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: '{"meta":{"success":true,"message":"Movie List"},"body":{"current_page":1,"data":[{"id":1,"user_id":2,"title":"this is title update double","summary":"this is summary","image":"default.jpg","url":"http:\/\/kris.biz\/corporis-accusamus-saepe-aut-ea","genres":"this is genres","author":"this is author","tags":"this is tags","imdb_rating":3.5,"pdf":"test","created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:43:21.000000Z","user":{"id":2,"name":"Prof. Myra Vandervort MD","email":"concepcion.mohr@example.org","email_verified_at":"2023-07-06T16:42:41.000000Z","created_at":"2023-07-06T16:42:41.000000Z","updated_at":"2023-07-06T16:42:41.000000Z"},"comments":[]},{"id":2,"user_id":2,"title":"Est consequuntur omnis alias voluptas nam sit.","summary":"Unde corrupti doloremque deserunt sed eos blanditiis officia error. Dolor sit totam blanditiis corporis doloremque quam. Sit dolore incidunt delectus sunt nobis. Minus reprehenderit laboriosam dolorum consequuntur.","image":"default.jpg","url":"https:\/\/purdy.info\/aperiam-quia-qui-beatae-consectetur.html","genres":"Katrine Shields","author":"Mustafa Walker","tags":"est facere inventore","imdb_rating":5.89,"pdf":"http:\/\/wilkinson.com\/\/dummy.pdf","created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z","user":{"id":2,"name":"Prof. Myra Vandervort MD","email":"concepcion.mohr@example.org","email_verified_at":"2023-07-06T16:42:41.000000Z","created_at":"2023-07-06T16:42:41.000000Z","updated_at":"2023-07-06T16:42:41.000000Z"},"comments":[{"id":3,"comment":"Quia voluptatem ut eligendi nihil libero et. Sit ipsam sunt ipsa voluptatum corporis. Officiis id eos necessitatibus. Deserunt ipsum ducimus non quod.","user_id":6,"movie_id":2,"created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z"},{"id":6,"comment":"Repellat pariatur consequatur iste totam est porro provident tempora. Laudantium vero voluptatem saepe nemo et expedita itaque veritatis. A quisquam distinctio maiores aut accusantium dolores porro dolorem. Aut iste fuga id ab aperiam.","user_id":6,"movie_id":2,"created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z"},{"id":7,"comment":"Minima error eveniet enim cumque hic. Est est sapiente ullam facere tempore vitae.","user_id":2,"movie_id":2,"created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z"}]},{"id":3,"user_id":3,"title":"Libero sapiente repellendus excepturi aliquam sapiente et animi.","summary":"Eius nihil autem consequuntur quibusdam hic. Facere qui voluptatem similique dolorem rerum molestias quod. Nam voluptatem rerum inventore vero. Quo veritatis cupiditate commodi architecto voluptate nam.","image":"default.jpg","url":"http:\/\/www.orn.info\/distinctio-ut-commodi-quibusdam-ullam-voluptas-fuga","genres":"Prof. Gerardo Rath DDS","author":"Milo Davis","tags":"veritatis sed officia","imdb_rating":6.67,"pdf":"http:\/\/www.mosciski.com\/\/dummy.pdf","created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z","user":{"id":3,"name":"Dr. Bo Tremblay","email":"jacobs.jeffery@example.net","email_verified_at":"2023-07-06T16:42:41.000000Z","created_at":"2023-07-06T16:42:41.000000Z","updated_at":"2023-07-06T16:42:41.000000Z"},"comments":[{"id":10,"comment":"In quasi accusamus in dignissimos cum. Necessitatibus vel tempore totam minima ipsum voluptatem aliquam. Occaecati mollitia magnam accusantium. Unde minima voluptates commodi voluptatem consectetur nihil eaque.","user_id":1,"movie_id":3,"created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z"}]},{"id":4,"user_id":7,"title":"Aut sit perferendis in iusto id ullam.","summary":"Ex odio nostrum veritatis impedit rerum ea. Esse quis similique unde aperiam ut natus. Sit quia qui laboriosam at. Voluptatem commodi mollitia perspiciatis et porro et.","image":"default.jpg","url":"http:\/\/hegmann.biz\/nihil-architecto-et-et","genres":"Rhoda Rath","author":"Francesca Brakus","tags":"quis quia aut","imdb_rating":7.29,"pdf":"http:\/\/www.jakubowski.info\/\/dummy.pdf","created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z","user":{"id":7,"name":"Mrs. Madie Doyle","email":"ida.roberts@example.net","email_verified_at":"2023-07-06T16:42:41.000000Z","created_at":"2023-07-06T16:42:41.000000Z","updated_at":"2023-07-06T16:42:41.000000Z"},"comments":[{"id":2,"comment":"Nisi pariatur reprehenderit voluptas eum consequatur est sed. Omnis ratione molestiae corrupti nihil voluptate quasi est magni. Adipisci quia itaque eos consequatur. Perspiciatis ipsa in est delectus ratione at.","user_id":2,"movie_id":4,"created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z"}]},{"id":5,"user_id":10,"title":"Et officiis accusantium a consequatur ipsum.","summary":"Accusamus voluptas eos velit eligendi est fuga. Labore repellendus amet omnis incidunt impedit quod minima. Alias sit iure aut ut rerum.","image":"default.jpg","url":"http:\/\/www.bailey.biz\/repellendus-odit-pariatur-veritatis-qui-et","genres":"Lonzo Robel","author":"Maida Towne","tags":"nesciunt suscipit esse","imdb_rating":4.04,"pdf":"http:\/\/torphy.com\/aliquam-error-sunt-et-atque-adipisci-reiciendis-doloribus.html\/dummy.pdf","created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z","user":{"id":10,"name":"Admin","email":"admin@gmail.com","email_verified_at":null,"created_at":null,"updated_at":null},"comments":[]},{"id":6,"user_id":2,"title":"Nostrum quis odit dolorem ipsum qui debitis vel dicta.","summary":"Harum quibusdam quis blanditiis consequatur magnam mollitia temporibus. Magnam molestias fuga odit iure recusandae consectetur perspiciatis. Non facilis perferendis ut esse eos qui itaque. Et perspiciatis et voluptas laborum fugit.","image":"default.jpg","url":"http:\/\/www.carter.com\/","genres":"Angelita West I","author":"Robyn Bode","tags":"explicabo sit ut","imdb_rating":6.84,"pdf":"http:\/\/rohan.com\/\/dummy.pdf","created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z","user":{"id":2,"name":"Prof. Myra Vandervort MD","email":"concepcion.mohr@example.org","email_verified_at":"2023-07-06T16:42:41.000000Z","created_at":"2023-07-06T16:42:41.000000Z","updated_at":"2023-07-06T16:42:41.000000Z"},"comments":[]},{"id":7,"user_id":8,"title":"Rerum omnis consequatur non explicabo laudantium dolorem quia.","summary":"Tempore beatae est quis. Quam et quidem autem. Alias et ut consequatur magnam inventore molestiae doloremque vel. Tenetur aut animi culpa reprehenderit quis voluptatem eos.","image":"default.jpg","url":"https:\/\/www.hoppe.biz\/quo-eveniet-labore-quisquam","genres":"Crystal Prosacco","author":"Janae Hammes PhD","tags":"rerum error natus","imdb_rating":7.31,"pdf":"http:\/\/price.com\/\/dummy.pdf","created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z","user":{"id":8,"name":"Devante Kulas","email":"filiberto04@example.net","email_verified_at":"2023-07-06T16:42:41.000000Z","created_at":"2023-07-06T16:42:41.000000Z","updated_at":"2023-07-06T16:42:41.000000Z"},"comments":[{"id":1,"comment":"Iure pariatur voluptatem nostrum qui quidem quo consequatur dicta. Aut numquam explicabo ex et. Corporis ab laborum quidem labore eveniet et harum. Ratione necessitatibus omnis aut assumenda dolor architecto eveniet iste.","user_id":9,"movie_id":7,"created_at":"2023-07-06T16:42:42.000000Z","updated_at":"2023-07-06T16:42:42.000000Z"}]}],"first_page_url":"http:\/\/localhost\/api\/fetchAll?page=1","from":1,"last_page":3,"last_page_url":"http:\/\/localhost\/api\/fetchAll?page=3","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/localhost\/api\/fetchAll?page=1","label":"1","active":true},{"url":"http:\/\/localhost\/api\/fetchAll?page=2","label":"2","active":false},{"url":"http:\/\/localhost\/api\/fetchAll?page=3","label":"3","active":false},{"url":"http:\/\/localhost\/api\/fetchAll?page=2","label":"Next &raquo;","active":false}],"next_page_url":"http:\/\/localhost\/api\/fetchAll?page=2","path":"http:\/\/localhost\/api\/fetchAll","per_page":7,"prev_page_url":null,"to":7,"total":15}}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/relatedMovie/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the relatedMovie.'
+        required: true
+        example: itaque
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: itaque
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/movies/create
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: ''
+        required: true
+        example: suscipit
+        type: string
+        custom: []
+      summary:
+        name: summary
+        description: ''
+        required: true
+        example: sit
+        type: string
+        custom: []
+      image:
+        name: image
+        description: ''
+        required: true
+        example: assumenda
+        type: string
+        custom: []
+      genres:
+        name: genres
+        description: ''
+        required: true
+        example: atque
+        type: string
+        custom: []
+      author:
+        name: author
+        description: ''
+        required: true
+        example: incidunt
+        type: string
+        custom: []
+      tags:
+        name: tags
+        description: ''
+        required: true
+        example: nam
+        type: string
+        custom: []
+      imdb_rating:
+        name: imdb_rating
+        description: ''
+        required: true
+        example: quos
+        type: string
+        custom: []
+      pdf:
+        name: pdf
+        description: ''
+        required: true
+        example: et
+        type: string
+        custom: []
+    cleanBodyParameters:
+      title: suscipit
+      summary: sit
+      image: assumenda
+      genres: atque
+      author: incidunt
+      tags: nam
+      imdb_rating: quos
+      pdf: et
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/movies/details/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the detail.'
+        required: true
+        example: veritatis
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: veritatis
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 401
+        content: '{"message":"Unauthenticated."}'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/movies/update/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the update.'
+        required: true
+        example: excepturi
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: excepturi
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      title:
+        name: title
+        description: ''
+        required: true
+        example: ea
+        type: string
+        custom: []
+      summary:
+        name: summary
+        description: ''
+        required: true
+        example: molestiae
+        type: string
+        custom: []
+      genres:
+        name: genres
+        description: ''
+        required: true
+        example: maxime
+        type: string
+        custom: []
+      author:
+        name: author
+        description: ''
+        required: true
+        example: dicta
+        type: string
+        custom: []
+      tags:
+        name: tags
+        description: ''
+        required: true
+        example: quisquam
+        type: string
+        custom: []
+      imdb_rating:
+        name: imdb_rating
+        description: ''
+        required: true
+        example: sint
+        type: string
+        custom: []
+      pdf:
+        name: pdf
+        description: ''
+        required: true
+        example: soluta
+        type: string
+        custom: []
+    cleanBodyParameters:
+      title: ea
+      summary: molestiae
+      genres: maxime
+      author: dicta
+      tags: quisquam
+      imdb_rating: sint
+      pdf: soluta
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/movies/delete/{id}'
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the delete.'
+        required: true
+        example: ipsa
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: ipsa
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/comments/create
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      comment:
+        name: comment
+        description: ''
+        required: true
+        example: quibusdam
+        type: string
+        custom: []
+      movie_id:
+        name: movie_id
+        description: ''
+        required: true
+        example: qui
+        type: string
+        custom: []
+    cleanBodyParameters:
+      comment: quibusdam
+      movie_id: qui
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

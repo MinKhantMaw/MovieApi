@@ -80,20 +80,26 @@
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-POSTapi-logout">
                                 <a href="#endpoints-POSTapi-logout">POST api/logout</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-fetchAll">
-                                <a href="#endpoints-GETapi-fetchAll">GET api/fetchAll</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-relatedMovie--id-">
-                                <a href="#endpoints-GETapi-relatedMovie--id-">GET api/relatedMovie/{id}</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-movies-create">
-                                <a href="#endpoints-POSTapi-movies-create">POST api/movies/create</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-movies-fetch">
+                                <a href="#endpoints-GETapi-movies-fetch">GET api/movies/fetch</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-GETapi-movies-details--id-">
                                 <a href="#endpoints-GETapi-movies-details--id-">GET api/movies/details/{id}</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-movies-update--id-">
-                                <a href="#endpoints-POSTapi-movies-update--id-">POST api/movies/update/{id}</a>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-movies-relatedMovie--id-">
+                                <a href="#endpoints-GETapi-movies-relatedMovie--id-">GET api/movies/relatedMovie/{id}</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-movies-details-download--id-">
+                                <a href="#endpoints-GETapi-movies-details-download--id-">GET api/movies/details/download/{id}</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-movies-fetchAll">
+                                <a href="#endpoints-GETapi-movies-fetchAll">GET api/movies/fetchAll</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-movies-create">
+                                <a href="#endpoints-POSTapi-movies-create">POST api/movies/create</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-movies-update--id-">
+                                <a href="#endpoints-PUTapi-movies-update--id-">PUT api/movies/update/{id}</a>
                             </li>
                                                                                 <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-movies-delete--id-">
                                 <a href="#endpoints-DELETEapi-movies-delete--id-">DELETE api/movies/delete/{id}</a>
@@ -112,7 +118,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: July 6, 2023</li>
+        <li>Last updated: July 7, 2023</li>
     </ul>
 </div>
 
@@ -151,9 +157,9 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"zmippnjuvkumgasffpxiwzgkusgaxkjhipzhqkxjdojwsccdivaygvdmpvlfbolpslijdlehwddmzihsdqerjzr\",
-    \"email\": \"rosemarie.wyman@example.net\",
-    \"password\": \"M\\/hq_hT20Y&lt;~\"
+    \"name\": \"zckyjximcotcpitzqocnjjicpmobbyyvnjyvfgljjcaipxfuyzhasataqbejnrw\",
+    \"email\": \"jermey.bashirian@example.org\",
+    \"password\": \"\\/k$Q:f\'2TP&gt;yw-c4H\"
 }"
 </code></pre></div>
 
@@ -169,9 +175,9 @@ const headers = {
 };
 
 let body = {
-    "name": "zmippnjuvkumgasffpxiwzgkusgaxkjhipzhqkxjdojwsccdivaygvdmpvlfbolpslijdlehwddmzihsdqerjzr",
-    "email": "rosemarie.wyman@example.net",
-    "password": "M\/hq_hT20Y&lt;~"
+    "name": "zckyjximcotcpitzqocnjjicpmobbyyvnjyvfgljjcaipxfuyzhasataqbejnrw",
+    "email": "jermey.bashirian@example.org",
+    "password": "\/k$Q:f'2TP&gt;yw-c4H"
 };
 
 fetch(url, {
@@ -260,10 +266,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-register"
-               value="zmippnjuvkumgasffpxiwzgkusgaxkjhipzhqkxjdojwsccdivaygvdmpvlfbolpslijdlehwddmzihsdqerjzr"
+               value="zckyjximcotcpitzqocnjjicpmobbyyvnjyvfgljjcaipxfuyzhasataqbejnrw"
                data-component="body">
     <br>
-<p>Must be at least 4 characters. Example: <code>zmippnjuvkumgasffpxiwzgkusgaxkjhipzhqkxjdojwsccdivaygvdmpvlfbolpslijdlehwddmzihsdqerjzr</code></p>
+<p>Must be at least 4 characters. Example: <code>zckyjximcotcpitzqocnjjicpmobbyyvnjyvfgljjcaipxfuyzhasataqbejnrw</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -271,10 +277,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-register"
-               value="rosemarie.wyman@example.net"
+               value="jermey.bashirian@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>rosemarie.wyman@example.net</code></p>
+<p>Must be a valid email address. Example: <code>jermey.bashirian@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -282,10 +288,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-register"
-               value="M/hq_hT20Y<~"
+               value="/k$Q:f'2TP>yw-c4H"
                data-component="body">
     <br>
-<p>Must be at least 8 characters. Example: <code>M/hq_hT20Y&lt;~</code></p>
+<p>Must be at least 8 characters. Example: <code>/k$Q:f'2TP&gt;yw-c4H</code></p>
         </div>
         </form>
 
@@ -306,8 +312,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"sarina.deckow@example.net\",
-    \"password\": \"oJC^42fG-o?5~\"
+    \"email\": \"dejah62@example.net\",
+    \"password\": \"$07&amp;J`WY[\\\\-+uUbRp3a\"
 }"
 </code></pre></div>
 
@@ -323,8 +329,8 @@ const headers = {
 };
 
 let body = {
-    "email": "sarina.deckow@example.net",
-    "password": "oJC^42fG-o?5~"
+    "email": "dejah62@example.net",
+    "password": "$07&amp;J`WY[\\-+uUbRp3a"
 };
 
 fetch(url, {
@@ -413,10 +419,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-login"
-               value="sarina.deckow@example.net"
+               value="dejah62@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>sarina.deckow@example.net</code></p>
+<p>Must be a valid email address. Example: <code>dejah62@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -424,10 +430,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-login"
-               value="oJC^42fG-o?5~"
+               value="$07&J`WY[\-+uUbRp3a"
                data-component="body">
     <br>
-<p>Example: <code>oJC^42fG-o?5~</code></p>
+<p>Example: <code>$07&amp;J</code>WY[-+uUbRp3a`</p>
         </div>
         </form>
 
@@ -539,27 +545,27 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-fetchAll">GET api/fetchAll</h2>
+                    <h2 id="endpoints-GETapi-movies-fetch">GET api/movies/fetch</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-fetchAll">
+<span id="example-requests-GETapi-movies-fetch">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/fetchAll" \
+    --get "http://localhost/api/movies/fetch" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/fetchAll"
+    "http://localhost/api/movies/fetch"
 );
 
 const headers = {
@@ -574,7 +580,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-fetchAll">
+<span id="example-responses-GETapi-movies-fetch">
             <blockquote>
             <p>Example response (200):</p>
         </blockquote>
@@ -599,229 +605,238 @@ access-control-allow-origin: *
         &quot;data&quot;: [
             {
                 &quot;id&quot;: 1,
-                &quot;user_id&quot;: 2,
-                &quot;title&quot;: &quot;this is title update double&quot;,
-                &quot;summary&quot;: &quot;this is summary&quot;,
+                &quot;user_id&quot;: 4,
+                &quot;title&quot;: &quot;this title is update&quot;,
+                &quot;summary&quot;: &quot;update&quot;,
                 &quot;image&quot;: &quot;default.jpg&quot;,
-                &quot;url&quot;: &quot;http://kris.biz/corporis-accusamus-saepe-aut-ea&quot;,
-                &quot;genres&quot;: &quot;this is genres&quot;,
+                &quot;url&quot;: &quot;http://schneider.org/reprehenderit-debitis-occaecati-quia.html&quot;,
+                &quot;genres&quot;: &quot;Min&quot;,
                 &quot;author&quot;: &quot;this is author&quot;,
                 &quot;tags&quot;: &quot;this is tags&quot;,
-                &quot;imdb_rating&quot;: 3.5,
-                &quot;pdf&quot;: &quot;test&quot;,
-                &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-07-06T16:43:21.000000Z&quot;,
+                &quot;imdb_rating&quot;: 5.5,
+                &quot;pdf&quot;: &quot;update&quot;,
+                &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-07-07T04:26:01.000000Z&quot;,
                 &quot;user&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;Prof. Myra Vandervort MD&quot;,
-                    &quot;email&quot;: &quot;concepcion.mohr@example.org&quot;,
-                    &quot;email_verified_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;created_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;
-                },
-                &quot;comments&quot;: []
-            },
-            {
-                &quot;id&quot;: 2,
-                &quot;user_id&quot;: 2,
-                &quot;title&quot;: &quot;Est consequuntur omnis alias voluptas nam sit.&quot;,
-                &quot;summary&quot;: &quot;Unde corrupti doloremque deserunt sed eos blanditiis officia error. Dolor sit totam blanditiis corporis doloremque quam. Sit dolore incidunt delectus sunt nobis. Minus reprehenderit laboriosam dolorum consequuntur.&quot;,
-                &quot;image&quot;: &quot;default.jpg&quot;,
-                &quot;url&quot;: &quot;https://purdy.info/aperiam-quia-qui-beatae-consectetur.html&quot;,
-                &quot;genres&quot;: &quot;Katrine Shields&quot;,
-                &quot;author&quot;: &quot;Mustafa Walker&quot;,
-                &quot;tags&quot;: &quot;est facere inventore&quot;,
-                &quot;imdb_rating&quot;: 5.89,
-                &quot;pdf&quot;: &quot;http://wilkinson.com//dummy.pdf&quot;,
-                &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;user&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;Prof. Myra Vandervort MD&quot;,
-                    &quot;email&quot;: &quot;concepcion.mohr@example.org&quot;,
-                    &quot;email_verified_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;created_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;
+                    &quot;id&quot;: 4,
+                    &quot;name&quot;: &quot;Berta Ziemann&quot;,
+                    &quot;email&quot;: &quot;jaquelin.grimes@example.com&quot;,
+                    &quot;email_verified_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
                 },
                 &quot;comments&quot;: [
                     {
                         &quot;id&quot;: 3,
-                        &quot;comment&quot;: &quot;Quia voluptatem ut eligendi nihil libero et. Sit ipsam sunt ipsa voluptatum corporis. Officiis id eos necessitatibus. Deserunt ipsum ducimus non quod.&quot;,
-                        &quot;user_id&quot;: 6,
-                        &quot;movie_id&quot;: 2,
-                        &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;
+                        &quot;comment&quot;: &quot;Vel eos deserunt repellendus quibusdam sed ullam assumenda. Eaque ratione minima aperiam nobis perferendis. Quae est earum a et autem ea.&quot;,
+                        &quot;user_id&quot;: 4,
+                        &quot;movie_id&quot;: 1,
+                        &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
                     },
                     {
-                        &quot;id&quot;: 6,
-                        &quot;comment&quot;: &quot;Repellat pariatur consequatur iste totam est porro provident tempora. Laudantium vero voluptatem saepe nemo et expedita itaque veritatis. A quisquam distinctio maiores aut accusantium dolores porro dolorem. Aut iste fuga id ab aperiam.&quot;,
-                        &quot;user_id&quot;: 6,
-                        &quot;movie_id&quot;: 2,
-                        &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;
-                    },
-                    {
-                        &quot;id&quot;: 7,
-                        &quot;comment&quot;: &quot;Minima error eveniet enim cumque hic. Est est sapiente ullam facere tempore vitae.&quot;,
-                        &quot;user_id&quot;: 2,
-                        &quot;movie_id&quot;: 2,
-                        &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;
+                        &quot;id&quot;: 11,
+                        &quot;comment&quot;: &quot;this is comment&quot;,
+                        &quot;user_id&quot;: 10,
+                        &quot;movie_id&quot;: 1,
+                        &quot;created_at&quot;: &quot;2023-07-07T04:26:13.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2023-07-07T04:26:13.000000Z&quot;
                     }
                 ]
             },
             {
                 &quot;id&quot;: 3,
                 &quot;user_id&quot;: 3,
-                &quot;title&quot;: &quot;Libero sapiente repellendus excepturi aliquam sapiente et animi.&quot;,
-                &quot;summary&quot;: &quot;Eius nihil autem consequuntur quibusdam hic. Facere qui voluptatem similique dolorem rerum molestias quod. Nam voluptatem rerum inventore vero. Quo veritatis cupiditate commodi architecto voluptate nam.&quot;,
+                &quot;title&quot;: &quot;Ullam est qui dolorum.&quot;,
+                &quot;summary&quot;: &quot;Rerum qui aut et ut quaerat. Minima delectus reprehenderit quibusdam ratione sint debitis quia aliquid. Illum est consequuntur ut necessitatibus hic non aut.&quot;,
                 &quot;image&quot;: &quot;default.jpg&quot;,
-                &quot;url&quot;: &quot;http://www.orn.info/distinctio-ut-commodi-quibusdam-ullam-voluptas-fuga&quot;,
-                &quot;genres&quot;: &quot;Prof. Gerardo Rath DDS&quot;,
-                &quot;author&quot;: &quot;Milo Davis&quot;,
-                &quot;tags&quot;: &quot;veritatis sed officia&quot;,
-                &quot;imdb_rating&quot;: 6.67,
-                &quot;pdf&quot;: &quot;http://www.mosciski.com//dummy.pdf&quot;,
-                &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
+                &quot;url&quot;: &quot;http://www.koepp.org/et-delectus-suscipit-fuga-aut&quot;,
+                &quot;genres&quot;: &quot;Ole Emard&quot;,
+                &quot;author&quot;: &quot;Trycia Howe&quot;,
+                &quot;tags&quot;: &quot;nemo quos temporibus&quot;,
+                &quot;imdb_rating&quot;: 4.24,
+                &quot;pdf&quot;: &quot;https://www.vonrueden.biz/suscipit-esse-et-maxime-cumque-maiores/dummy.pdf&quot;,
+                &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
                 &quot;user&quot;: {
                     &quot;id&quot;: 3,
-                    &quot;name&quot;: &quot;Dr. Bo Tremblay&quot;,
-                    &quot;email&quot;: &quot;jacobs.jeffery@example.net&quot;,
-                    &quot;email_verified_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;created_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;
+                    &quot;name&quot;: &quot;Jody Kilback&quot;,
+                    &quot;email&quot;: &quot;tabitha09@example.com&quot;,
+                    &quot;email_verified_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
                 },
                 &quot;comments&quot;: [
                     {
-                        &quot;id&quot;: 10,
-                        &quot;comment&quot;: &quot;In quasi accusamus in dignissimos cum. Necessitatibus vel tempore totam minima ipsum voluptatem aliquam. Occaecati mollitia magnam accusantium. Unde minima voluptates commodi voluptatem consectetur nihil eaque.&quot;,
-                        &quot;user_id&quot;: 1,
+                        &quot;id&quot;: 6,
+                        &quot;comment&quot;: &quot;Quam ducimus architecto unde eveniet itaque. Inventore natus autem et aut et. Non rerum voluptate et eligendi consequuntur. Quo aut debitis qui eligendi sed quis.&quot;,
+                        &quot;user_id&quot;: 8,
                         &quot;movie_id&quot;: 3,
-                        &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;
-                    }
-                ]
-            },
-            {
-                &quot;id&quot;: 4,
-                &quot;user_id&quot;: 7,
-                &quot;title&quot;: &quot;Aut sit perferendis in iusto id ullam.&quot;,
-                &quot;summary&quot;: &quot;Ex odio nostrum veritatis impedit rerum ea. Esse quis similique unde aperiam ut natus. Sit quia qui laboriosam at. Voluptatem commodi mollitia perspiciatis et porro et.&quot;,
-                &quot;image&quot;: &quot;default.jpg&quot;,
-                &quot;url&quot;: &quot;http://hegmann.biz/nihil-architecto-et-et&quot;,
-                &quot;genres&quot;: &quot;Rhoda Rath&quot;,
-                &quot;author&quot;: &quot;Francesca Brakus&quot;,
-                &quot;tags&quot;: &quot;quis quia aut&quot;,
-                &quot;imdb_rating&quot;: 7.29,
-                &quot;pdf&quot;: &quot;http://www.jakubowski.info//dummy.pdf&quot;,
-                &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;user&quot;: {
-                    &quot;id&quot;: 7,
-                    &quot;name&quot;: &quot;Mrs. Madie Doyle&quot;,
-                    &quot;email&quot;: &quot;ida.roberts@example.net&quot;,
-                    &quot;email_verified_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;created_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;
-                },
-                &quot;comments&quot;: [
-                    {
-                        &quot;id&quot;: 2,
-                        &quot;comment&quot;: &quot;Nisi pariatur reprehenderit voluptas eum consequatur est sed. Omnis ratione molestiae corrupti nihil voluptate quasi est magni. Adipisci quia itaque eos consequatur. Perspiciatis ipsa in est delectus ratione at.&quot;,
-                        &quot;user_id&quot;: 2,
-                        &quot;movie_id&quot;: 4,
-                        &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;
+                        &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
                     }
                 ]
             },
             {
                 &quot;id&quot;: 5,
-                &quot;user_id&quot;: 10,
-                &quot;title&quot;: &quot;Et officiis accusantium a consequatur ipsum.&quot;,
-                &quot;summary&quot;: &quot;Accusamus voluptas eos velit eligendi est fuga. Labore repellendus amet omnis incidunt impedit quod minima. Alias sit iure aut ut rerum.&quot;,
+                &quot;user_id&quot;: 8,
+                &quot;title&quot;: &quot;Rerum animi minus non libero dignissimos quibusdam eum expedita.&quot;,
+                &quot;summary&quot;: &quot;Qui ducimus fuga impedit iste voluptas excepturi quis. Dolores ipsum aut dolorem. Aliquam dolorum perferendis consequatur assumenda. Similique temporibus possimus necessitatibus totam. Facere veritatis voluptates qui qui molestias dolore voluptate sint.&quot;,
                 &quot;image&quot;: &quot;default.jpg&quot;,
-                &quot;url&quot;: &quot;http://www.bailey.biz/repellendus-odit-pariatur-veritatis-qui-et&quot;,
-                &quot;genres&quot;: &quot;Lonzo Robel&quot;,
-                &quot;author&quot;: &quot;Maida Towne&quot;,
-                &quot;tags&quot;: &quot;nesciunt suscipit esse&quot;,
-                &quot;imdb_rating&quot;: 4.04,
-                &quot;pdf&quot;: &quot;http://torphy.com/aliquam-error-sunt-et-atque-adipisci-reiciendis-doloribus.html/dummy.pdf&quot;,
-                &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
+                &quot;url&quot;: &quot;http://kozey.org/sint-voluptas-quos-corporis-voluptas-voluptatum-autem-reprehenderit&quot;,
+                &quot;genres&quot;: &quot;Wilfredo Berge&quot;,
+                &quot;author&quot;: &quot;Dakota Grant III&quot;,
+                &quot;tags&quot;: &quot;nisi autem molestiae&quot;,
+                &quot;imdb_rating&quot;: 7.48,
+                &quot;pdf&quot;: &quot;http://halvorson.com//dummy.pdf&quot;,
+                &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
                 &quot;user&quot;: {
-                    &quot;id&quot;: 10,
-                    &quot;name&quot;: &quot;Admin&quot;,
-                    &quot;email&quot;: &quot;admin@gmail.com&quot;,
-                    &quot;email_verified_at&quot;: null,
-                    &quot;created_at&quot;: null,
-                    &quot;updated_at&quot;: null
+                    &quot;id&quot;: 8,
+                    &quot;name&quot;: &quot;Abbigail Lowe Sr.&quot;,
+                    &quot;email&quot;: &quot;loyal.hackett@example.com&quot;,
+                    &quot;email_verified_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
                 },
                 &quot;comments&quot;: []
             },
             {
                 &quot;id&quot;: 6,
-                &quot;user_id&quot;: 2,
-                &quot;title&quot;: &quot;Nostrum quis odit dolorem ipsum qui debitis vel dicta.&quot;,
-                &quot;summary&quot;: &quot;Harum quibusdam quis blanditiis consequatur magnam mollitia temporibus. Magnam molestias fuga odit iure recusandae consectetur perspiciatis. Non facilis perferendis ut esse eos qui itaque. Et perspiciatis et voluptas laborum fugit.&quot;,
+                &quot;user_id&quot;: 7,
+                &quot;title&quot;: &quot;Unde ab aut repudiandae officia veritatis quis.&quot;,
+                &quot;summary&quot;: &quot;Sunt cum explicabo nihil cupiditate sapiente omnis. In maiores natus tenetur amet quia. Tempore fugiat et saepe rerum. Architecto voluptatem maiores ab.&quot;,
                 &quot;image&quot;: &quot;default.jpg&quot;,
-                &quot;url&quot;: &quot;http://www.carter.com/&quot;,
-                &quot;genres&quot;: &quot;Angelita West I&quot;,
-                &quot;author&quot;: &quot;Robyn Bode&quot;,
-                &quot;tags&quot;: &quot;explicabo sit ut&quot;,
-                &quot;imdb_rating&quot;: 6.84,
-                &quot;pdf&quot;: &quot;http://rohan.com//dummy.pdf&quot;,
-                &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
+                &quot;url&quot;: &quot;https://www.morissette.com/consequuntur-sequi-ipsa-facere-doloribus-commodi-adipisci&quot;,
+                &quot;genres&quot;: &quot;Freida Lakin&quot;,
+                &quot;author&quot;: &quot;Phoebe Strosin&quot;,
+                &quot;tags&quot;: &quot;et aut corporis&quot;,
+                &quot;imdb_rating&quot;: 9.26,
+                &quot;pdf&quot;: &quot;http://www.bahringer.com/nihil-assumenda-voluptas-adipisci-sed-deserunt-sequi-ex/dummy.pdf&quot;,
+                &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
                 &quot;user&quot;: {
-                    &quot;id&quot;: 2,
-                    &quot;name&quot;: &quot;Prof. Myra Vandervort MD&quot;,
-                    &quot;email&quot;: &quot;concepcion.mohr@example.org&quot;,
-                    &quot;email_verified_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;created_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;
+                    &quot;id&quot;: 7,
+                    &quot;name&quot;: &quot;Catherine Friesen&quot;,
+                    &quot;email&quot;: &quot;labadie.manuel@example.com&quot;,
+                    &quot;email_verified_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
                 },
                 &quot;comments&quot;: []
             },
             {
                 &quot;id&quot;: 7,
-                &quot;user_id&quot;: 8,
-                &quot;title&quot;: &quot;Rerum omnis consequatur non explicabo laudantium dolorem quia.&quot;,
-                &quot;summary&quot;: &quot;Tempore beatae est quis. Quam et quidem autem. Alias et ut consequatur magnam inventore molestiae doloremque vel. Tenetur aut animi culpa reprehenderit quis voluptatem eos.&quot;,
+                &quot;user_id&quot;: 3,
+                &quot;title&quot;: &quot;Amet et at et commodi est modi praesentium.&quot;,
+                &quot;summary&quot;: &quot;Accusamus aperiam ad ut et et nemo. Excepturi porro laudantium cum velit illum necessitatibus qui. Aliquam explicabo exercitationem accusamus.&quot;,
                 &quot;image&quot;: &quot;default.jpg&quot;,
-                &quot;url&quot;: &quot;https://www.hoppe.biz/quo-eveniet-labore-quisquam&quot;,
-                &quot;genres&quot;: &quot;Crystal Prosacco&quot;,
-                &quot;author&quot;: &quot;Janae Hammes PhD&quot;,
-                &quot;tags&quot;: &quot;rerum error natus&quot;,
-                &quot;imdb_rating&quot;: 7.31,
-                &quot;pdf&quot;: &quot;http://price.com//dummy.pdf&quot;,
-                &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
+                &quot;url&quot;: &quot;http://boehm.com/fugit-suscipit-tenetur-aliquam.html&quot;,
+                &quot;genres&quot;: &quot;Baron Reichert&quot;,
+                &quot;author&quot;: &quot;Noemy Grimes&quot;,
+                &quot;tags&quot;: &quot;molestias non porro&quot;,
+                &quot;imdb_rating&quot;: 8.54,
+                &quot;pdf&quot;: &quot;https://www.ohara.com/impedit-vitae-esse-ipsam-aut/dummy.pdf&quot;,
+                &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
                 &quot;user&quot;: {
-                    &quot;id&quot;: 8,
-                    &quot;name&quot;: &quot;Devante Kulas&quot;,
-                    &quot;email&quot;: &quot;filiberto04@example.net&quot;,
-                    &quot;email_verified_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;created_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;,
-                    &quot;updated_at&quot;: &quot;2023-07-06T16:42:41.000000Z&quot;
+                    &quot;id&quot;: 3,
+                    &quot;name&quot;: &quot;Jody Kilback&quot;,
+                    &quot;email&quot;: &quot;tabitha09@example.com&quot;,
+                    &quot;email_verified_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
                 },
                 &quot;comments&quot;: [
                     {
-                        &quot;id&quot;: 1,
-                        &quot;comment&quot;: &quot;Iure pariatur voluptatem nostrum qui quidem quo consequatur dicta. Aut numquam explicabo ex et. Corporis ab laborum quidem labore eveniet et harum. Ratione necessitatibus omnis aut assumenda dolor architecto eveniet iste.&quot;,
-                        &quot;user_id&quot;: 9,
+                        &quot;id&quot;: 10,
+                        &quot;comment&quot;: &quot;Consequatur nostrum aut et dolores dolores. Iure aut ab aut iusto. Ut et est quasi magnam ab.&quot;,
+                        &quot;user_id&quot;: 5,
                         &quot;movie_id&quot;: 7,
-                        &quot;created_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;,
-                        &quot;updated_at&quot;: &quot;2023-07-06T16:42:42.000000Z&quot;
+                        &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;user_id&quot;: 6,
+                &quot;title&quot;: &quot;Voluptates omnis nesciunt sapiente quis saepe neque repellat provident.&quot;,
+                &quot;summary&quot;: &quot;Ut qui facere omnis magni et qui. Perspiciatis expedita id vitae dicta. Explicabo rerum laborum minus cumque molestias veniam unde.&quot;,
+                &quot;image&quot;: &quot;default.jpg&quot;,
+                &quot;url&quot;: &quot;https://price.org/qui-facilis-voluptates-ut-inventore.html&quot;,
+                &quot;genres&quot;: &quot;Aletha Kuhlman&quot;,
+                &quot;author&quot;: &quot;Steve Vandervort&quot;,
+                &quot;tags&quot;: &quot;sunt possimus aut&quot;,
+                &quot;imdb_rating&quot;: 9.32,
+                &quot;pdf&quot;: &quot;http://www.simonis.com/ratione-ad-dolor-corrupti-quia-quia-qui/dummy.pdf&quot;,
+                &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 6,
+                    &quot;name&quot;: &quot;Buck Kirlin&quot;,
+                    &quot;email&quot;: &quot;kmills@example.com&quot;,
+                    &quot;email_verified_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
+                },
+                &quot;comments&quot;: [
+                    {
+                        &quot;id&quot;: 5,
+                        &quot;comment&quot;: &quot;Voluptas voluptates quisquam ut sequi explicabo pariatur qui. Omnis corporis doloribus omnis quasi occaecati doloremque. Quo eos incidunt amet ea.&quot;,
+                        &quot;user_id&quot;: 8,
+                        &quot;movie_id&quot;: 8,
+                        &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
+                    }
+                ]
+            },
+            {
+                &quot;id&quot;: 9,
+                &quot;user_id&quot;: 9,
+                &quot;title&quot;: &quot;Enim non eum ut quaerat omnis distinctio.&quot;,
+                &quot;summary&quot;: &quot;Nihil rerum placeat iste velit dignissimos odit sed. Non eos maxime eum incidunt ipsum. Aut est architecto dolores ab doloribus autem velit. Tempore a fuga consequatur pariatur mollitia voluptate provident suscipit.&quot;,
+                &quot;image&quot;: &quot;default.jpg&quot;,
+                &quot;url&quot;: &quot;http://www.boyer.com/quam-harum-dolorem-dolores-iure-et-vel-exercitationem&quot;,
+                &quot;genres&quot;: &quot;Destini Altenwerth&quot;,
+                &quot;author&quot;: &quot;Savannah Labadie II&quot;,
+                &quot;tags&quot;: &quot;quis incidunt ipsam&quot;,
+                &quot;imdb_rating&quot;: 8.78,
+                &quot;pdf&quot;: &quot;http://goyette.com//dummy.pdf&quot;,
+                &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                &quot;user&quot;: {
+                    &quot;id&quot;: 9,
+                    &quot;name&quot;: &quot;Isobel Ferry&quot;,
+                    &quot;email&quot;: &quot;emmitt.lockman@example.net&quot;,
+                    &quot;email_verified_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                    &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
+                },
+                &quot;comments&quot;: [
+                    {
+                        &quot;id&quot;: 8,
+                        &quot;comment&quot;: &quot;Sequi ut ipsum quam totam soluta provident pariatur. Voluptatem enim sed et rerum ipsum. Consequatur sint similique quos quo.&quot;,
+                        &quot;user_id&quot;: 3,
+                        &quot;movie_id&quot;: 9,
+                        &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
+                    },
+                    {
+                        &quot;id&quot;: 9,
+                        &quot;comment&quot;: &quot;Necessitatibus tempora amet natus tempore. Illum culpa voluptatum neque totam nisi et veniam deleniti. Id eligendi mollitia placeat quibusdam. Autem non laboriosam distinctio molestiae.&quot;,
+                        &quot;user_id&quot;: 7,
+                        &quot;movie_id&quot;: 9,
+                        &quot;created_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;,
+                        &quot;updated_at&quot;: &quot;2023-07-07T04:24:27.000000Z&quot;
                     }
                 ]
             }
         ],
-        &quot;first_page_url&quot;: &quot;http://localhost/api/fetchAll?page=1&quot;,
+        &quot;first_page_url&quot;: &quot;http://localhost/api/movies/fetch?page=1&quot;,
         &quot;from&quot;: 1,
-        &quot;last_page&quot;: 3,
-        &quot;last_page_url&quot;: &quot;http://localhost/api/fetchAll?page=3&quot;,
+        &quot;last_page&quot;: 2,
+        &quot;last_page_url&quot;: &quot;http://localhost/api/movies/fetch?page=2&quot;,
         &quot;links&quot;: [
             {
                 &quot;url&quot;: null,
@@ -829,73 +844,68 @@ access-control-allow-origin: *
                 &quot;active&quot;: false
             },
             {
-                &quot;url&quot;: &quot;http://localhost/api/fetchAll?page=1&quot;,
+                &quot;url&quot;: &quot;http://localhost/api/movies/fetch?page=1&quot;,
                 &quot;label&quot;: &quot;1&quot;,
                 &quot;active&quot;: true
             },
             {
-                &quot;url&quot;: &quot;http://localhost/api/fetchAll?page=2&quot;,
+                &quot;url&quot;: &quot;http://localhost/api/movies/fetch?page=2&quot;,
                 &quot;label&quot;: &quot;2&quot;,
                 &quot;active&quot;: false
             },
             {
-                &quot;url&quot;: &quot;http://localhost/api/fetchAll?page=3&quot;,
-                &quot;label&quot;: &quot;3&quot;,
-                &quot;active&quot;: false
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost/api/fetchAll?page=2&quot;,
+                &quot;url&quot;: &quot;http://localhost/api/movies/fetch?page=2&quot;,
                 &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
                 &quot;active&quot;: false
             }
         ],
-        &quot;next_page_url&quot;: &quot;http://localhost/api/fetchAll?page=2&quot;,
-        &quot;path&quot;: &quot;http://localhost/api/fetchAll&quot;,
+        &quot;next_page_url&quot;: &quot;http://localhost/api/movies/fetch?page=2&quot;,
+        &quot;path&quot;: &quot;http://localhost/api/movies/fetch&quot;,
         &quot;per_page&quot;: 7,
         &quot;prev_page_url&quot;: null,
         &quot;to&quot;: 7,
-        &quot;total&quot;: 15
+        &quot;total&quot;: 10
     }
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-fetchAll" hidden>
+<span id="execution-results-GETapi-movies-fetch" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-fetchAll"></span>:
+                id="execution-response-status-GETapi-movies-fetch"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-fetchAll"
+    <pre class="json"><code id="execution-response-content-GETapi-movies-fetch"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-fetchAll" hidden>
+<span id="execution-error-GETapi-movies-fetch" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-fetchAll">
+    <pre><code id="execution-error-message-GETapi-movies-fetch">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-fetchAll" data-method="GET"
-      data-path="api/fetchAll"
+<form id="form-GETapi-movies-fetch" data-method="GET"
+      data-path="api/movies/fetch"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-fetchAll', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies-fetch', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-fetchAll"
-                    onclick="tryItOut('GETapi-fetchAll');">Try it out ⚡
+                    id="btn-tryout-GETapi-movies-fetch"
+                    onclick="tryItOut('GETapi-movies-fetch');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-fetchAll"
-                    onclick="cancelTryOut('GETapi-fetchAll');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-movies-fetch"
+                    onclick="cancelTryOut('GETapi-movies-fetch');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-fetchAll"
+                    id="btn-executetryout-GETapi-movies-fetch"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -903,7 +913,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/fetchAll</code></b>
+            <b><code>api/movies/fetch</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -911,7 +921,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-fetchAll"
+                              name="Content-Type"                data-endpoint="GETapi-movies-fetch"
                value="application/json"
                data-component="header">
     <br>
@@ -922,7 +932,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-fetchAll"
+                              name="Accept"                data-endpoint="GETapi-movies-fetch"
                value="application/json"
                data-component="header">
     <br>
@@ -930,27 +940,27 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-relatedMovie--id-">GET api/relatedMovie/{id}</h2>
+                    <h2 id="endpoints-GETapi-movies-details--id-">GET api/movies/details/{id}</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-relatedMovie--id-">
+<span id="example-requests-GETapi-movies-details--id-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/relatedMovie/itaque" \
+    --get "http://localhost/api/movies/details/repudiandae" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/relatedMovie/itaque"
+    "http://localhost/api/movies/details/repudiandae"
 );
 
 const headers = {
@@ -965,7 +975,1275 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-relatedMovie--id-">
+<span id="example-responses-GETapi-movies-details--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;meta&quot;: {
+        &quot;success&quot;: true,
+        &quot;message&quot;: &quot;Movie Details&quot;
+    },
+    &quot;body&quot;: null
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-movies-details--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-movies-details--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-movies-details--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-movies-details--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-movies-details--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-movies-details--id-" data-method="GET"
+      data-path="api/movies/details/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies-details--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-movies-details--id-"
+                    onclick="tryItOut('GETapi-movies-details--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-movies-details--id-"
+                    onclick="cancelTryOut('GETapi-movies-details--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-movies-details--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/movies/details/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-movies-details--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-movies-details--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="id"                data-endpoint="GETapi-movies-details--id-"
+               value="repudiandae"
+               data-component="url">
+    <br>
+<p>The ID of the detail. Example: <code>repudiandae</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-movies-relatedMovie--id-">GET api/movies/relatedMovie/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-movies-relatedMovie--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/movies/relatedMovie/architecto" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/movies/relatedMovie/architecto"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-movies-relatedMovie--id-">
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;No query results for model [App\\Models\\Movie] architecto&quot;,
+    &quot;exception&quot;: &quot;Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException&quot;,
+    &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+    &quot;line&quot;: 391,
+    &quot;trace&quot;: [
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+            &quot;line&quot;: 367,
+            &quot;function&quot;: &quot;prepareException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 143,
+            &quot;function&quot;: &quot;handleException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php&quot;,
+            &quot;line&quot;: 50,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 126,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 102,
+            &quot;function&quot;: &quot;handleRequest&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 799,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 776,
+            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 740,
+            &quot;function&quot;: &quot;runRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 729,
+            &quot;function&quot;: &quot;dispatchToRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 190,
+            &quot;function&quot;: &quot;dispatch&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 141,
+            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
+            &quot;line&quot;: 31,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
+            &quot;line&quot;: 40,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
+            &quot;line&quot;: 27,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
+            &quot;line&quot;: 86,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php&quot;,
+            &quot;line&quot;: 62,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
+            &quot;line&quot;: 39,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 165,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 134,
+            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 287,
+            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 92,
+            &quot;function&quot;: &quot;makeApiCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 45,
+            &quot;function&quot;: &quot;makeResponseCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 209,
+            &quot;function&quot;: &quot;__invoke&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 166,
+            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 95,
+            &quot;function&quot;: &quot;fetchResponses&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 124,
+            &quot;function&quot;: &quot;processRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 71,
+            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 49,
+            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;get&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 36,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
+            &quot;line&quot;: 41,
+            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 93,
+            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;callBoundMethod&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
+            &quot;line&quot;: 661,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 183,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/symfony/console/Command/Command.php&quot;,
+            &quot;line&quot;: 326,
+            &quot;function&quot;: &quot;execute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 153,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 1063,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 320,
+            &quot;function&quot;: &quot;doRunCommand&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 174,
+            &quot;function&quot;: &quot;doRun&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Console/Application.php&quot;,
+            &quot;line&quot;: 102,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
+            &quot;line&quot;: 155,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/artisan&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-movies-relatedMovie--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-movies-relatedMovie--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-movies-relatedMovie--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-movies-relatedMovie--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-movies-relatedMovie--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-movies-relatedMovie--id-" data-method="GET"
+      data-path="api/movies/relatedMovie/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies-relatedMovie--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-movies-relatedMovie--id-"
+                    onclick="tryItOut('GETapi-movies-relatedMovie--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-movies-relatedMovie--id-"
+                    onclick="cancelTryOut('GETapi-movies-relatedMovie--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-movies-relatedMovie--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/movies/relatedMovie/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-movies-relatedMovie--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-movies-relatedMovie--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="id"                data-endpoint="GETapi-movies-relatedMovie--id-"
+               value="architecto"
+               data-component="url">
+    <br>
+<p>The ID of the relatedMovie. Example: <code>architecto</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-movies-details-download--id-">GET api/movies/details/download/{id}</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-movies-details-download--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/movies/details/download/odit" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/movies/details/download/odit"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-movies-details-download--id-">
+            <blockquote>
+            <p>Example response (404):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;No query results for model [App\\Models\\Movie] odit&quot;,
+    &quot;exception&quot;: &quot;Symfony\\Component\\HttpKernel\\Exception\\NotFoundHttpException&quot;,
+    &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+    &quot;line&quot;: 391,
+    &quot;trace&quot;: [
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php&quot;,
+            &quot;line&quot;: 367,
+            &quot;function&quot;: &quot;prepareException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Exceptions\\Handler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;render&quot;,
+            &quot;class&quot;: &quot;NunoMaduro\\Collision\\Adapters\\Laravel\\ExceptionHandler&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 143,
+            &quot;function&quot;: &quot;handleException&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php&quot;,
+            &quot;line&quot;: 50,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\SubstituteBindings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 126,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 102,
+            &quot;function&quot;: &quot;handleRequest&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php&quot;,
+            &quot;line&quot;: 54,
+            &quot;function&quot;: &quot;handleRequestUsingNamedLimiter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Middleware\\ThrottleRequests&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 799,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 776,
+            &quot;function&quot;: &quot;runRouteWithinStack&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 740,
+            &quot;function&quot;: &quot;runRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Routing/Router.php&quot;,
+            &quot;line&quot;: 729,
+            &quot;function&quot;: &quot;dispatchToRoute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 190,
+            &quot;function&quot;: &quot;dispatch&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Routing\\Router&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 141,
+            &quot;function&quot;: &quot;Illuminate\\Foundation\\Http\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php&quot;,
+            &quot;line&quot;: 31,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php&quot;,
+            &quot;line&quot;: 21,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php&quot;,
+            &quot;line&quot;: 40,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\TrimStrings&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php&quot;,
+            &quot;line&quot;: 27,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php&quot;,
+            &quot;line&quot;: 86,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php&quot;,
+            &quot;line&quot;: 62,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\HandleCors&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php&quot;,
+            &quot;line&quot;: 39,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 180,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Http\\Middleware\\TrustProxies&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php&quot;,
+            &quot;line&quot;: 116,
+            &quot;function&quot;: &quot;Illuminate\\Pipeline\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 165,
+            &quot;function&quot;: &quot;then&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Pipeline\\Pipeline&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php&quot;,
+            &quot;line&quot;: 134,
+            &quot;function&quot;: &quot;sendRequestThroughRouter&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 299,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Http\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 287,
+            &quot;function&quot;: &quot;callLaravelOrLumenRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 92,
+            &quot;function&quot;: &quot;makeApiCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 45,
+            &quot;function&quot;: &quot;makeResponseCall&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Strategies/Responses/ResponseCalls.php&quot;,
+            &quot;line&quot;: 35,
+            &quot;function&quot;: &quot;makeResponseCallIfConditionsPass&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 209,
+            &quot;function&quot;: &quot;__invoke&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Strategies\\Responses\\ResponseCalls&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 166,
+            &quot;function&quot;: &quot;iterateThroughStrategies&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Extracting/Extractor.php&quot;,
+            &quot;line&quot;: 95,
+            &quot;function&quot;: &quot;fetchResponses&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 124,
+            &quot;function&quot;: &quot;processRoute&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Extracting\\Extractor&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 71,
+            &quot;function&quot;: &quot;extractEndpointsInfoFromLaravelApp&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/GroupedEndpoints/GroupedEndpointsFromApp.php&quot;,
+            &quot;line&quot;: 49,
+            &quot;function&quot;: &quot;extractEndpointsInfoAndWriteToDisk&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/knuckleswtf/scribe/src/Commands/GenerateDocumentation.php&quot;,
+            &quot;line&quot;: 51,
+            &quot;function&quot;: &quot;get&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\GroupedEndpoints\\GroupedEndpointsFromApp&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 36,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Knuckles\\Scribe\\Commands\\GenerateDocumentation&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/Util.php&quot;,
+            &quot;line&quot;: 41,
+            &quot;function&quot;: &quot;Illuminate\\Container\\{closure}&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 93,
+            &quot;function&quot;: &quot;unwrapIfClosure&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Util&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;callBoundMethod&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Container/Container.php&quot;,
+            &quot;line&quot;: 661,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\BoundMethod&quot;,
+            &quot;type&quot;: &quot;::&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 183,
+            &quot;function&quot;: &quot;call&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Container\\Container&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/symfony/console/Command/Command.php&quot;,
+            &quot;line&quot;: 326,
+            &quot;function&quot;: &quot;execute&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Console/Command.php&quot;,
+            &quot;line&quot;: 153,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Command\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 1063,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Command&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 320,
+            &quot;function&quot;: &quot;doRunCommand&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/symfony/console/Application.php&quot;,
+            &quot;line&quot;: 174,
+            &quot;function&quot;: &quot;doRun&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Console/Application.php&quot;,
+            &quot;line&quot;: 102,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Symfony\\Component\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php&quot;,
+            &quot;line&quot;: 155,
+            &quot;function&quot;: &quot;run&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Console\\Application&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        },
+        {
+            &quot;file&quot;: &quot;/home/mkhant/laravel-project/testing/artisan&quot;,
+            &quot;line&quot;: 37,
+            &quot;function&quot;: &quot;handle&quot;,
+            &quot;class&quot;: &quot;Illuminate\\Foundation\\Console\\Kernel&quot;,
+            &quot;type&quot;: &quot;-&gt;&quot;
+        }
+    ]
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-movies-details-download--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-movies-details-download--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-movies-details-download--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-movies-details-download--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-movies-details-download--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-movies-details-download--id-" data-method="GET"
+      data-path="api/movies/details/download/{id}"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies-details-download--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-movies-details-download--id-"
+                    onclick="tryItOut('GETapi-movies-details-download--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-movies-details-download--id-"
+                    onclick="cancelTryOut('GETapi-movies-details-download--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-movies-details-download--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/movies/details/download/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-movies-details-download--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-movies-details-download--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="id"                data-endpoint="GETapi-movies-details-download--id-"
+               value="odit"
+               data-component="url">
+    <br>
+<p>The ID of the download. Example: <code>odit</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="endpoints-GETapi-movies-fetchAll">GET api/movies/fetchAll</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-movies-fetchAll">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/movies/fetchAll" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/movies/fetchAll"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-movies-fetchAll">
             <blockquote>
             <p>Example response (401):</p>
         </blockquote>
@@ -983,43 +2261,43 @@ access-control-allow-origin: *
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-relatedMovie--id-" hidden>
+<span id="execution-results-GETapi-movies-fetchAll" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-relatedMovie--id-"></span>:
+                id="execution-response-status-GETapi-movies-fetchAll"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-relatedMovie--id-"
+    <pre class="json"><code id="execution-response-content-GETapi-movies-fetchAll"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-relatedMovie--id-" hidden>
+<span id="execution-error-GETapi-movies-fetchAll" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-relatedMovie--id-">
+    <pre><code id="execution-error-message-GETapi-movies-fetchAll">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-GETapi-relatedMovie--id-" data-method="GET"
-      data-path="api/relatedMovie/{id}"
+<form id="form-GETapi-movies-fetchAll" data-method="GET"
+      data-path="api/movies/fetchAll"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-relatedMovie--id-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies-fetchAll', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-relatedMovie--id-"
-                    onclick="tryItOut('GETapi-relatedMovie--id-');">Try it out ⚡
+                    id="btn-tryout-GETapi-movies-fetchAll"
+                    onclick="tryItOut('GETapi-movies-fetchAll');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-relatedMovie--id-"
-                    onclick="cancelTryOut('GETapi-relatedMovie--id-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-movies-fetchAll"
+                    onclick="cancelTryOut('GETapi-movies-fetchAll');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-relatedMovie--id-"
+                    id="btn-executetryout-GETapi-movies-fetchAll"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
@@ -1027,7 +2305,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/relatedMovie/{id}</code></b>
+            <b><code>api/movies/fetchAll</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -1035,7 +2313,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-relatedMovie--id-"
+                              name="Content-Type"                data-endpoint="GETapi-movies-fetchAll"
                value="application/json"
                data-component="header">
     <br>
@@ -1046,25 +2324,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-relatedMovie--id-"
+                              name="Accept"                data-endpoint="GETapi-movies-fetchAll"
                value="application/json"
                data-component="header">
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="id"                data-endpoint="GETapi-relatedMovie--id-"
-               value="itaque"
-               data-component="url">
-    <br>
-<p>The ID of the relatedMovie. Example: <code>itaque</code></p>
-            </div>
-                    </form>
+                        </form>
 
                     <h2 id="endpoints-POSTapi-movies-create">POST api/movies/create</h2>
 
@@ -1083,14 +2349,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"suscipit\",
-    \"summary\": \"sit\",
-    \"image\": \"assumenda\",
-    \"genres\": \"atque\",
-    \"author\": \"incidunt\",
-    \"tags\": \"nam\",
-    \"imdb_rating\": \"quos\",
-    \"pdf\": \"et\"
+    \"title\": \"autem\",
+    \"summary\": \"nihil\",
+    \"image\": \"consequatur\",
+    \"genres\": \"ea\",
+    \"author\": \"voluptatem\",
+    \"tags\": \"vel\",
+    \"imdb_rating\": \"ea\",
+    \"pdf\": \"voluptas\"
 }"
 </code></pre></div>
 
@@ -1106,14 +2372,14 @@ const headers = {
 };
 
 let body = {
-    "title": "suscipit",
-    "summary": "sit",
-    "image": "assumenda",
-    "genres": "atque",
-    "author": "incidunt",
-    "tags": "nam",
-    "imdb_rating": "quos",
-    "pdf": "et"
+    "title": "autem",
+    "summary": "nihil",
+    "image": "consequatur",
+    "genres": "ea",
+    "author": "voluptatem",
+    "tags": "vel",
+    "imdb_rating": "ea",
+    "pdf": "voluptas"
 };
 
 fetch(url, {
@@ -1202,10 +2468,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-movies-create"
-               value="suscipit"
+               value="autem"
                data-component="body">
     <br>
-<p>Example: <code>suscipit</code></p>
+<p>Example: <code>autem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>summary</code></b>&nbsp;&nbsp;
@@ -1213,10 +2479,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="summary"                data-endpoint="POSTapi-movies-create"
-               value="sit"
+               value="nihil"
                data-component="body">
     <br>
-<p>Example: <code>sit</code></p>
+<p>Example: <code>nihil</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>image</code></b>&nbsp;&nbsp;
@@ -1224,10 +2490,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="image"                data-endpoint="POSTapi-movies-create"
-               value="assumenda"
+               value="consequatur"
                data-component="body">
     <br>
-<p>Example: <code>assumenda</code></p>
+<p>Example: <code>consequatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>genres</code></b>&nbsp;&nbsp;
@@ -1235,10 +2501,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="genres"                data-endpoint="POSTapi-movies-create"
-               value="atque"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>atque</code></p>
+<p>Example: <code>ea</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
@@ -1246,10 +2512,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="author"                data-endpoint="POSTapi-movies-create"
-               value="incidunt"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>incidunt</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tags</code></b>&nbsp;&nbsp;
@@ -1257,10 +2523,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="tags"                data-endpoint="POSTapi-movies-create"
-               value="nam"
+               value="vel"
                data-component="body">
     <br>
-<p>Example: <code>nam</code></p>
+<p>Example: <code>vel</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>imdb_rating</code></b>&nbsp;&nbsp;
@@ -1268,10 +2534,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="imdb_rating"                data-endpoint="POSTapi-movies-create"
-               value="quos"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>quos</code></p>
+<p>Example: <code>ea</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>pdf</code></b>&nbsp;&nbsp;
@@ -1279,180 +2545,44 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="pdf"                data-endpoint="POSTapi-movies-create"
-               value="et"
+               value="voluptas"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>voluptas</code></p>
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-movies-details--id-">GET api/movies/details/{id}</h2>
+                    <h2 id="endpoints-PUTapi-movies-update--id-">PUT api/movies/update/{id}</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-movies-details--id-">
+<span id="example-requests-PUTapi-movies-update--id-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/movies/details/veritatis" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/movies/details/veritatis"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-movies-details--id-">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-movies-details--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-movies-details--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-movies-details--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-movies-details--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-movies-details--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-movies-details--id-" data-method="GET"
-      data-path="api/movies/details/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-movies-details--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-movies-details--id-"
-                    onclick="tryItOut('GETapi-movies-details--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-movies-details--id-"
-                    onclick="cancelTryOut('GETapi-movies-details--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-movies-details--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/movies/details/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-movies-details--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-movies-details--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="id"                data-endpoint="GETapi-movies-details--id-"
-               value="veritatis"
-               data-component="url">
-    <br>
-<p>The ID of the detail. Example: <code>veritatis</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-POSTapi-movies-update--id-">POST api/movies/update/{id}</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-POSTapi-movies-update--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/movies/update/excepturi" \
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost/api/movies/update/aut" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"ea\",
-    \"summary\": \"molestiae\",
-    \"genres\": \"maxime\",
-    \"author\": \"dicta\",
-    \"tags\": \"quisquam\",
-    \"imdb_rating\": \"sint\",
-    \"pdf\": \"soluta\"
+    \"title\": \"ut\",
+    \"summary\": \"et\",
+    \"genres\": \"expedita\",
+    \"author\": \"quis\",
+    \"tags\": \"dolor\",
+    \"imdb_rating\": \"repellat\",
+    \"pdf\": \"voluptatem\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/movies/update/excepturi"
+    "http://localhost/api/movies/update/aut"
 );
 
 const headers = {
@@ -1461,69 +2591,69 @@ const headers = {
 };
 
 let body = {
-    "title": "ea",
-    "summary": "molestiae",
-    "genres": "maxime",
-    "author": "dicta",
-    "tags": "quisquam",
-    "imdb_rating": "sint",
-    "pdf": "soluta"
+    "title": "ut",
+    "summary": "et",
+    "genres": "expedita",
+    "author": "quis",
+    "tags": "dolor",
+    "imdb_rating": "repellat",
+    "pdf": "voluptatem"
 };
 
 fetch(url, {
-    method: "POST",
+    method: "PUT",
     headers,
     body: JSON.stringify(body),
 }).then(response =&gt; response.json());</code></pre></div>
 
 </span>
 
-<span id="example-responses-POSTapi-movies-update--id-">
+<span id="example-responses-PUTapi-movies-update--id-">
 </span>
-<span id="execution-results-POSTapi-movies-update--id-" hidden>
+<span id="execution-results-PUTapi-movies-update--id-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-POSTapi-movies-update--id-"></span>:
+                id="execution-response-status-PUTapi-movies-update--id-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-movies-update--id-"
+    <pre class="json"><code id="execution-response-content-PUTapi-movies-update--id-"
       data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-POSTapi-movies-update--id-" hidden>
+<span id="execution-error-PUTapi-movies-update--id-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-movies-update--id-">
+    <pre><code id="execution-error-message-PUTapi-movies-update--id-">
 
 Tip: Check that you&#039;re properly connected to the network.
 If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
 You can check the Dev Tools console for debugging information.</code></pre>
 </span>
-<form id="form-POSTapi-movies-update--id-" data-method="POST"
+<form id="form-PUTapi-movies-update--id-" data-method="PUT"
       data-path="api/movies/update/{id}"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-movies-update--id-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-movies-update--id-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-movies-update--id-"
-                    onclick="tryItOut('POSTapi-movies-update--id-');">Try it out ⚡
+                    id="btn-tryout-PUTapi-movies-update--id-"
+                    onclick="tryItOut('PUTapi-movies-update--id-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-movies-update--id-"
-                    onclick="cancelTryOut('POSTapi-movies-update--id-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-PUTapi-movies-update--id-"
+                    onclick="cancelTryOut('PUTapi-movies-update--id-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-movies-update--id-"
+                    id="btn-executetryout-PUTapi-movies-update--id-"
                     data-initial-text="Send Request 💥"
                     data-loading-text="⏱ Sending..."
                     hidden>Send Request 💥
             </button>
             </h3>
             <p>
-            <small class="badge badge-black">POST</small>
+            <small class="badge badge-darkblue">PUT</small>
             <b><code>api/movies/update/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
@@ -1532,7 +2662,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-movies-update--id-"
+                              name="Content-Type"                data-endpoint="PUTapi-movies-update--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -1543,7 +2673,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-movies-update--id-"
+                              name="Accept"                data-endpoint="PUTapi-movies-update--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -1555,11 +2685,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="id"                data-endpoint="POSTapi-movies-update--id-"
-               value="excepturi"
+                              name="id"                data-endpoint="PUTapi-movies-update--id-"
+               value="aut"
                data-component="url">
     <br>
-<p>The ID of the update. Example: <code>excepturi</code></p>
+<p>The ID of the update. Example: <code>aut</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1567,77 +2697,77 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="title"                data-endpoint="POSTapi-movies-update--id-"
-               value="ea"
+                              name="title"                data-endpoint="PUTapi-movies-update--id-"
+               value="ut"
                data-component="body">
     <br>
-<p>Example: <code>ea</code></p>
+<p>Example: <code>ut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>summary</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="summary"                data-endpoint="POSTapi-movies-update--id-"
-               value="molestiae"
+                              name="summary"                data-endpoint="PUTapi-movies-update--id-"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>molestiae</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>genres</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="genres"                data-endpoint="POSTapi-movies-update--id-"
-               value="maxime"
+                              name="genres"                data-endpoint="PUTapi-movies-update--id-"
+               value="expedita"
                data-component="body">
     <br>
-<p>Example: <code>maxime</code></p>
+<p>Example: <code>expedita</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="author"                data-endpoint="POSTapi-movies-update--id-"
-               value="dicta"
+                              name="author"                data-endpoint="PUTapi-movies-update--id-"
+               value="quis"
                data-component="body">
     <br>
-<p>Example: <code>dicta</code></p>
+<p>Example: <code>quis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>tags</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="tags"                data-endpoint="POSTapi-movies-update--id-"
-               value="quisquam"
+                              name="tags"                data-endpoint="PUTapi-movies-update--id-"
+               value="dolor"
                data-component="body">
     <br>
-<p>Example: <code>quisquam</code></p>
+<p>Example: <code>dolor</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>imdb_rating</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="imdb_rating"                data-endpoint="POSTapi-movies-update--id-"
-               value="sint"
+                              name="imdb_rating"                data-endpoint="PUTapi-movies-update--id-"
+               value="repellat"
                data-component="body">
     <br>
-<p>Example: <code>sint</code></p>
+<p>Example: <code>repellat</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>pdf</code></b>&nbsp;&nbsp;
 <small>string</small>&nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-                              name="pdf"                data-endpoint="POSTapi-movies-update--id-"
-               value="soluta"
+                              name="pdf"                data-endpoint="PUTapi-movies-update--id-"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>soluta</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
         </form>
 
@@ -1654,14 +2784,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/movies/delete/ipsa" \
+    "http://localhost/api/movies/delete/quae" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/movies/delete/ipsa"
+    "http://localhost/api/movies/delete/quae"
 );
 
 const headers = {
@@ -1754,10 +2884,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-movies-delete--id-"
-               value="ipsa"
+               value="quae"
                data-component="url">
     <br>
-<p>The ID of the delete. Example: <code>ipsa</code></p>
+<p>The ID of the delete. Example: <code>quae</code></p>
             </div>
                     </form>
 
@@ -1778,8 +2908,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"comment\": \"quibusdam\",
-    \"movie_id\": \"qui\"
+    \"comment\": \"nihil\",
+    \"movie_id\": \"cupiditate\"
 }"
 </code></pre></div>
 
@@ -1795,8 +2925,8 @@ const headers = {
 };
 
 let body = {
-    "comment": "quibusdam",
-    "movie_id": "qui"
+    "comment": "nihil",
+    "movie_id": "cupiditate"
 };
 
 fetch(url, {
@@ -1885,10 +3015,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="comment"                data-endpoint="POSTapi-comments-create"
-               value="quibusdam"
+               value="nihil"
                data-component="body">
     <br>
-<p>Example: <code>quibusdam</code></p>
+<p>Example: <code>nihil</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>movie_id</code></b>&nbsp;&nbsp;
@@ -1896,10 +3026,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="movie_id"                data-endpoint="POSTapi-comments-create"
-               value="qui"
+               value="cupiditate"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>cupiditate</code></p>
         </div>
         </form>
 

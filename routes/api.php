@@ -12,16 +12,18 @@ Route::controller(AuthenticationController::class)->group(function () {
     Route::post('logout', 'logout')->middleware('auth:api');
 });
 
-Route::get('movies/fetchAll', [MovieController::class, 'index']);
-Route::get('movies/details/{id}',  [MovieController::class,'details']);
-Route::get('movies/relatedMovie/{id}', [MovieController::class, 'getRelatedMovies']);
+Route::controller(MovieController::class)->prefix('movies')->group(function () {
+    Route::get('fetch',  'indexPage');
+    Route::get('details/{id}',   'details');
+    Route::get('relatedMovie/{id}',  'getRelatedMovies');
+    Route::get('details/download/{id}',  'download');
+});
 
 Route::middleware(['auth:api'])->group(function () {
     Route::controller(MovieController::class)->prefix('movies')->group(function () {
-        // Route::get('fetchAll',  'index');
+        Route::get('fetchAll',  'index');
         Route::post('create',  'create');
-        // Route::get('/details/{id}',  'details');
-        Route::post('update/{id}',  'update');
+        Route::put('update/{id}',  'update');
         Route::delete('delete/{id}',  'delete');
     });
 

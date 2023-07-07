@@ -3,19 +3,26 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
-use Barryvdh\DomPDF\Facade as PDF;
 use App\Helpers\ApiResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use PDF;
 
 class MovieController extends Controller
 {
 
     public function __construct()
     {
-        $this->middleware('auth:api')->except(['index', 'details','getRelatedMovies','generatePDF']);
+        $this->middleware('auth:api')->except(['indexPage', 'details','getRelatedMovies','download']);
+    }
+
+    // not authenticated
+    public function indexPage()
+    {
+        $movies = Movie::with(['user', 'comments'])->paginate(7)->withQueryString();
+        return ApiResponse::success('Movie List', $movies, 200);
     }
 
     public function index()
@@ -45,7 +52,6 @@ class MovieController extends Controller
         if ($request->hasFile('image')) {
             $image_file = $request->file('image');
             $img_name = time() . '-' . uniqid() . '-' . $image_file->getClientOriginalName();
-
 
             Storage::disk('public')->put(
                 'images/' . $img_name,
@@ -77,6 +83,7 @@ class MovieController extends Controller
 
     public function update(Request $request, $id)
     {
+        $movie = Movie::findOrFail($id);
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'summary' => 'required',
@@ -90,7 +97,6 @@ class MovieController extends Controller
         if ($validator->fails()) {
             return ApiResponse::fail('Validation Error', $validator->errors()->all(), 422);
         } else {
-            $movie = Movie::findOrFail($id);
 
             $movie->title = $request->title;
             $movie->summary = $request->summary;
@@ -140,7 +146,19 @@ class MovieController extends Controller
             ->limit(7)
             ->get();
 
-
         return ApiResponse::success('Related movies have been added',  $relatedMovies, 200);
+    }
+
+    public function download(Request $request, $id){
+        $movie = Movie::findOrFail($id);
+        $pdf = PDF::loadView('details', compact('movie'));
+
+        $filename = 'movie.pdf';
+        $headers = [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' => 'attachment; filename="' . $filename . '"',
+        ];
+        return $pdf->download($filename, $headers);
+
     }
 }

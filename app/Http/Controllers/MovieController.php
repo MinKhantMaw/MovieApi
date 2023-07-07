@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
+use Barryvdh\DomPDF\Facade as PDF;
 use App\Helpers\ApiResponse;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class MovieController extends Controller
@@ -14,7 +15,7 @@ class MovieController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth:api', ['except' => ['index']]);
+        $this->middleware('auth:api')->except(['index', 'details','getRelatedMovies','generatePDF']);
     }
 
     public function index()
@@ -70,7 +71,7 @@ class MovieController extends Controller
 
     public function details($id)
     {
-        $movie = Movie::find($id);
+        $movie = Movie::with('comments')->find($id);
         return ApiResponse::success('Movie Details', $movie, 200);
     }
 
@@ -135,7 +136,7 @@ class MovieController extends Controller
             ->orWhere('genres', $currentMovie->genres)
             ->orWhere('tags', $currentMovie->tags)
             ->orWhere('id', '!=', $currentMovie->id)
-            ->orderByDesc('imdb_rating')
+            ->orderByDesc('imdb_rating', '>=', 4.5)
             ->limit(7)
             ->get();
 

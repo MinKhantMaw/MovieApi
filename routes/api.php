@@ -9,17 +9,18 @@ use App\Http\Controllers\CommentController;
 Route::controller(AuthenticationController::class)->group(function () {
     Route::post('register', 'register');
     Route::post('login', 'login');
-    Route::post('logout', 'logout');
+    Route::post('logout', 'logout')->middleware('auth:api');
 });
 
-Route::get('fetchAll', [MovieController::class, 'index']);
-Route::get('relatedMovie/{id}', [MovieController::class, 'getRelatedMovies']);
+Route::get('movies/fetchAll', [MovieController::class, 'index']);
+Route::get('movies/details/{id}',  [MovieController::class,'details']);
+Route::get('movies/relatedMovie/{id}', [MovieController::class, 'getRelatedMovies']);
 
 Route::middleware(['auth:api'])->group(function () {
     Route::controller(MovieController::class)->prefix('movies')->group(function () {
         // Route::get('fetchAll',  'index');
         Route::post('create',  'create');
-        Route::get('/details/{id}',  'details');
+        // Route::get('/details/{id}',  'details');
         Route::post('update/{id}',  'update');
         Route::delete('delete/{id}',  'delete');
     });
